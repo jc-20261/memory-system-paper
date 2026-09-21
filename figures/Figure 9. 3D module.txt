@@ -1,7 +1,7 @@
 Figure 9. The 3D module extracts objects and actions from the earlier data including NL memory and annotated action timeline, and generates an initial 3D scene assembly. 3D operations are then selected that correspond to the actions. The operations are sequentially applied to the initial 3D scene to progress the timeline. This application produces the new ground truth for the memory, i.e. one based on the 3D objects and their behaviour/interactions, instead of pure text. This leads to a reconstituted action timeline, and the original memory generation resumes to produce a memory encoding. For details, please see section 3.5. 
 
 
-Below are excerpts of the initial scene and one set of operations corresponding to one high level action. 
+Below are excerpts of the initial scene and one set of operations corresponding to one high level action. The memory is for peeling an apple. 
 
 
 Initial 3D scene

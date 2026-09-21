@@ -1,0 +1,4 @@
+
+Blocks parsed: 14
+Frames rendered: 14
+Operations failed (skipped): 0

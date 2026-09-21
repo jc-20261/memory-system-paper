@@ -1,0 +1,67 @@
+Verb generation
+
+
+ACTION TEMPLATE: apply_squeeze_force
+Verb: squeeze
+Memory IDs: mem_000001
+Instance count: 1
+--------------------------------------------------------------------------------
+ACTION TEMPLATE: apply_squeeze_to_handles
+Verb: squeeze
+Memory IDs: mem_000013
+Instance count: 1
+--------------------------------------------------------------------------------
+ACTION TEMPLATE: apply_squeezing_force
+Verb: squeeze
+Memory IDs: mem_000052, mem_000057
+Instance count: 2
+--------------------------------------------------------------------------------
+ACTION TEMPLATE: apply_squeezing_pressure
+Verb: squeeze
+Memory IDs: mem_000046
+Instance count: 1
+--------------------------------------------------------------------------------
+ACTION TEMPLATE: apply_stabilizing_pressure
+Verb: stabilize
+Memory IDs: mem_000030, mem_000039
+Instance count: 2
+--------------------------------------------------------------------------------
+ACTION TEMPLATE: apply_stable_grip
+Verb: grip
+Memory IDs: mem_000088
+Instance count: 1
+--------------------------------------------------------------------------------
+ACTION TEMPLATE: apply_stable_grip_pressure
+Verb: grip
+Memory IDs: mem_000005, mem_000077
+Instance count: 2
+--------------------------------------------------------------------------------
+ACTION TEMPLATE: place_lid_on_container
+Verb: place
+Memory IDs: mem_000006, mem_000031
+Instance count: 2
+--------------------------------------------------------------------------------
+
+
+Alias expansion
+
+
+Attribute component: contents
+  - content
+  - material
+  - fill
+  - inner_material
+  - substance
+  - material_inside
+  - interior_material
+  - what_is_inside
+  - load
+  - filling
+
+
+Value: photodiode
+  - light_sensor
+  - optical_detector
+  - photodetector
+
+

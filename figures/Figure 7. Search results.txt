@@ -1,0 +1,114 @@
+Figure 7. Search results from user queries: "how to clean a microwave?" and "how to bury a gold bar in the backyard". 
+
+The query terms were demonstrated in figure 6. For "cleaning microwave", the top ranked memories involved cleaning or cleanliness, typically as a goal like the query. For "burying a gold bar", the top ranked memories mostly had to do with gardening work, involving the ground/soil and planting. Some ranked memories appear unrelated, and this was a result of attributes that were peripheral to the query matching with a memory's goal states, leading to high ranking scores (for detailed breakdown of matching and scoring, see section 3.3.3). Additional controls can be introduced through further testing involving a larger memory dataset.   
+
+
+
+
+
+[llm]> how to clean a microwave?
+Query terms:
+[('object:person', 1.0), 
+...
+,('goalstate:value_expanded:spotless', 0.8)]
+
+Term: DONE | Query 286/286 | Index terms examined: 1 | Elapsed: 9.2ss examined: 1 | Elapsed: 9.2sssd: 9.2sss2s2s: 9.0s
+Search completed in 9.27s
+
+Top results:
+1. descaling the electric kettle (score: 161.0190)
+2. cleaning the bird bath (score: 141.9264)
+3. painting the fence (score: 136.7200)
+4. washing the car by hand (score: 136.1130)
+5. cleaning the refrigerator door gasket (score: 127.2372)
+6. cleaning the toaster crumb tray (score: 126.4118)
+7. spreading mulch in the flower bed (score: 126.1242)
+8. making granola (score: 119.0858)
+9. toasting nuts for a salad (score: 118.2543)
+10. Setting the manual focus distance to 0.8 meters on the camera lens for a sharp macro shot (score: 116.6150)
+Search results saved.
+
+Select a result number, type 'plan', or press Enter to continue: 1
+
+Memory: mem_000011
+Activity: descaling the electric kettle
+Top 20 matched terms:
+1. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "clean", "source_type": "goalstate", "state_change_type": null} -> fullpath:{"action": "remaining_deposit_particles_loosen_and_wash_away", "object": "kettle_01", "path": ["interior.surface", "cleanliness"], "op": "eq", "value": "cleaner", "state_change_type": "new", "source_context": {"type": "action", "action_instance_id": "mem_000011.memory.actions.0.sub_actions.8.sub_actions.0.sub_actions.3", "template": "remaining_deposit_particles_loosen_and_wash_away", "general_template": "remaining_deposit_particles_loosen_and_wash_away", "alt": "remaining_deposit_particles_loosen_and_wash_away_01"}, "source_type": "regular"} (score 12.9600)
+2. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "clean", "source_type": "goalstate", "state_change_type": null} -> fullpath:{"action": "remaining_deposit_particles_loosen_and_wash_away", "object": "kettle_01", "path": ["interior.surface", "cleanliness"], "op": "eq", "value": "partially_clean", "state_change_type": "old", "source_context": {"type": "action", "action_instance_id": "mem_000011.memory.actions.0.sub_actions.8.sub_actions.0.sub_actions.3", "template": "remaining_deposit_particles_loosen_and_wash_away", "general_template": "remaining_deposit_particles_loosen_and_wash_away", "alt": "remaining_deposit_particles_loosen_and_wash_away_01"}, "source_type": "regular"} (score 12.9600)
+3. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "clean", "source_type": "goalstate", "state_change_type": null} -> fullpath:{"action": null, "object": "heating_element_01", "path": ["surface_exposed"], "op": "eq", "value": true, "state_change_type": "goal", "source_context": {"type": "goal_state", "object_id": "heating_element_01", "template": "heating_element"}, "source_type": "goalstate"} (score 11.5200)
+4. attribute_expanded:condition_of_surface -> attribute:surface.cleanliness (score 5.7600)
+5. attribute_expanded:state_of_the_surface -> attribute:surface.cleanliness (score 5.7600)
+6. attribute_expanded:state_of_the_surface -> attribute:"interior.surface".cleanliness (score 5.7600)
+7. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "dirty", "source_type": "regular"} -> fullpath:{"action": null, "object": "heating_element_01", "path": ["surface_exposed"], "op": "eq", "value": true, "state_change_type": "goal", "source_context": {"type": "goal_state", "object_id": "heating_element_01", "template": "heating_element"}, "source_type": "goalstate"} (score 2.8800)
+8. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "dirty", "source_type": "regular", "state_change_type": null} -> fullpath:{"action": null, "object": "heating_element_01", "path": ["surface_exposed"], "op": "eq", "value": true, "state_change_type": "goal", "source_context": {"type": "goal_state", "object_id": "heating_element_01", "template": "heating_element"}, "source_type": "goalstate"} (score 2.8800)
+9. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "clean", "source_type": "goalstate", "state_change_type": null} -> fullpath:{"action": null, "object": "kettle_01", "path": ["heating_element", "surface_exposed"], "op": "eq", "value": true, "state_change_type": null, "source_context": {"type": "object", "object_id": "kettle_01", "template": "kettle"}, "source_type": "regular"} (score 2.8800)
+10. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "clean", "source_type": "goalstate", "state_change_type": null} -> fullpath:{"action": null, "object": "kettle_01", "path": ["surface_temperature"], "op": "eq", "value": "ambient", "state_change_type": null, "source_context": {"type": "object", "object_id": "kettle_01", "template": "kettle"}, "source_type": "regular"} (score 2.8800)
+11. fullpath:{"action": null, "object": "microwave_oven", "path": ["surface_state"], "op": "eq", "value": "clean", "source_type": "goalstate", "state_change_type": null} -> fullpath:{"action": null, "object": "heating_element_01", "path": ["surface_exposed"], "op": "eq", "value": true, "state_change_type": null, "source_context": {"type": "object", "object_id": "heating_element_01", "template": "heating_element"}, "source_type": "regular"} (score 2.8800)
+12. value:clean -> value:clean (score 2.0000)
+13. attribute_expanded:surface_quality -> attribute:surface_state (score 1.8000)
+14. value_expanded:immaculate -> value:clean (score 1.8000)
+15. value_expanded:unsoiled -> value:clean (score 1.8000)
+16. value_expanded:pure -> value:clean (score 1.8000)
+17. value_expanded:sanitized -> value:clean (score 1.8000)
+18. value_expanded:washed -> value:clean (score 1.8000)
+19. value_expanded:clear -> value:legible (score 1.8000)
+20. value_expanded:fresh -> value:cool (score 1.8000)
+
+
+
+
+
+
+
+
+[llm]> how to bury a gold bar in the backyard?
+
+Query terms:
+[('object:person', 1.0),
+...
+, ('spatial:in(gold_bar,ground)', 1.0)]
+
+
+Top results:
+1. planting a shade tree (score: 229.7114)
+2. edging the sidewalk with a spade (score: 218.7089)
+3. sowing radish seeds (score: 200.6090)
+4. top-dressing the lawn with compost (score: 198.8796)
+5. dividing daylilies (score: 191.4398)
+6. washing the car by hand (score: 189.0536)
+7. thinning carrot seedlings (score: 187.0976)
+8. Setting a weekly intention with a five-minute visualization exercise (score: 185.2052)
+9. making leaf mold (score: 183.7045)
+10. making herbed compound butter (score: 182.2702)
+Search results saved.
+
+Select a result number, type 'plan', or press Enter to continue: 1
+
+Memory: mem_000053
+Activity: planting a shade tree
+Top 20 matched terms:
+1. fullpath:{"action": null, "object": "gold_bar", "path": ["buried"], "op": "eq", "value": true, "source_type": "goalstate", "state_change_type": null} -> fullpath:{"action": "object_stands_firm", "object": "root_ball_01", "path": ["covered"], "op": "eq", "value": true, "state_change_type": "precondition", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.9.sub_actions.4", "template": "object_stands_firm", "general_template": "object_stands_firm", "alt": "object_stands_firm_01"}, "source_type": "regular"} (score 14.4000)
+2. fullpath:{"action": null, "object": "backyard", "path": ["soil_type"], "op": "eq", "value": "loam", "source_type": "regular"} -> fullpath:{"action": null, "object": "root_ball_01", "path": ["composition", "soil"], "op": "eq", "value": "root_ball_soil_01", "state_change_type": null, "source_context": {"type": "object", "object_id": "root_ball_01", "template": "root_ball"}, "source_type": "regular"} (score 2.9160)
+3. fullpath:{"action": null, "object": "gold_bar", "path": ["surface_state"], "op": "eq", "value": "solid", "source_type": "regular"} -> fullpath:{"action": null, "object": "driveway_01", "path": ["surface_state"], "op": "eq", "value": "hard", "state_change_type": null, "source_context": {"type": "object", "object_id": "driveway_01", "template": "driveway"}, "source_type": "regular"} (score 2.5920)
+4. fullpath:{"action": null, "object": "backyard", "path": ["color"], "op": "eq", "value": "green", "source_type": "regular"} -> fullpath:{"action": null, "object": "sapling_01", "path": ["leaf_color"], "op": "eq", "value": "pale_green", "state_change_type": null, "source_context": {"type": "object", "object_id": "sapling_01", "template": "sapling"}, "source_type": "regular"} (score 2.3328)
+5. fullpath:{"action": null, "object": "gold_bar", "path": ["position"], "op": "eq", "value": "above_ground", "source_type": "regular", "state_change_type": null} -> fullpath:{"action": "lift_material_load", "object": "spade_01", "path": ["vertical_position"], "op": "eq", "value": "raised", "state_change_type": "new", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.3.sub_actions.0.sub_actions.1", "template": "lift_material_load", "general_template": "lift_material_load", "alt": "lift_material_load_01"}, "source_type": "regular"} (score 2.3328)
+6. fullpath:{"action": null, "object": "gold_bar", "path": ["position"], "op": "eq", "value": "above_ground", "source_type": "regular", "state_change_type": null} -> fullpath:{"action": "lift_material_load", "object": "spade_01", "path": ["vertical_position"], "op": "eq", "value": "ground", "state_change_type": "old", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.3.sub_actions.0.sub_actions.1", "template": "lift_material_load", "general_template": "lift_material_load", "alt": "lift_material_load_01"}, "source_type": "regular"} (score 2.3328)
+7. fullpath:{"action": null, "object": "gold_bar", "path": ["position"], "op": "eq", "value": "above_ground", "source_type": "regular", "state_change_type": null} -> fullpath:{"action": "stake_and_tie_plant", "object": "stake_01", "path": ["state"], "op": "eq", "value": "on_ground", "state_change_type": "precondition", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.8", "template": "stake_and_tie_plant", "general_template": "stake_and_tie_plant", "alt": "stake_and_tie_sapling"}, "source_type": "regular"} (score 2.3328)
+8. fullpath:{"action": null, "object": "backyard", "path": ["color"], "op": "eq", "value": "green", "source_type": "regular"} -> fullpath:{"action": null, "object": "sapling_trunk_01", "path": ["color"], "op": "eq", "value": "grey_green", "state_change_type": null, "source_context": {"type": "object", "object_id": "sapling_trunk_01", "template": "sapling_trunk"}, "source_type": "regular"} (score 2.1600)
+9. fullpath:{"action": null, "object": "shovel", "path": ["color"], "op": "eq", "value": "silver", "source_type": "regular"} -> fullpath:{"action": null, "object": "sapling_trunk_01", "path": ["color"], "op": "eq", "value": "grey_green", "state_change_type": null, "source_context": {"type": "object", "object_id": "sapling_trunk_01", "template": "sapling_trunk"}, "source_type": "regular"} (score 1.9440)
+10. fullpath:{"action": null, "object": "gold_bar", "path": ["position"], "op": "eq", "value": "above_ground", "source_type": "regular", "state_change_type": null} -> fullpath:{"action": "pressure_release_bubbles", "object": "bubble_01", "path": ["position"], "op": "eq", "value": "air", "state_change_type": "new", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.7.sub_actions.6", "template": "pressure_release_bubbles", "general_template": "pressure_release_bubbles", "alt": "pressure_release_bubbles_01"}, "source_type": "regular"} (score 1.9440)
+11. fullpath:{"action": null, "object": "gold_bar", "path": ["position"], "op": "eq", "value": "above_ground", "source_type": "regular", "state_change_type": null} -> fullpath:{"action": "pressure_release_bubbles", "object": "bubble_01", "path": ["position"], "op": "eq", "value": "soil", "state_change_type": "old", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.7.sub_actions.6", "template": "pressure_release_bubbles", "general_template": "pressure_release_bubbles", "alt": "pressure_release_bubbles_01"}, "source_type": "regular"} (score 1.9440)
+12. attribute_expanded:hidden -> attribute:covered (score 1.8000)
+13. fullpath:{"action": null, "object": "backyard", "path": ["color"], "op": "eq", "value": "green", "source_type": "regular"} -> fullpath:{"action": null, "object": "foliage_01", "path": ["leaf_color"], "op": "eq", "value": "pale_green", "state_change_type": null, "source_context": {"type": "object", "object_id": "foliage_01", "template": "foliage"}, "source_type": "regular"} (score 1.6200)
+14. fullpath:{"action": null, "object": "gold_bar", "path": ["position"], "op": "eq", "value": "above_ground", "source_type": "regular", "state_change_type": null} -> fullpath:{"action": "place_tool_edge_on_surface", "object": "spade_edge_01", "path": ["position"], "op": "eq", "value": "on_turf_surface", "state_change_type": "new", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.2.sub_actions.0", "template": "place_tool_edge_on_surface", "general_template": "place_tool_edge_on_surface", "alt": "place_tool_edge_on_surface_01"}, "source_type": "regular"} (score 1.6200)
+15. attribute_expanded:under_soil -> attribute:soil (score 1.6000)
+16. attribute_expanded:under_soil -> attribute:blade_depth_in_soil (score 1.6000)
+17. fullpath:{"action": null, "object": "shovel", "path": ["condition"], "op": "eq", "value": "clean", "source_type": "regular"} -> fullpath:{"action": "stake_and_tie_plant", "object": "tie_01", "path": ["state"], "op": "eq", "value": "uncoiled", "state_change_type": "precondition", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.8", "template": "stake_and_tie_plant", "general_template": "stake_and_tie_plant", "alt": "stake_and_tie_sapling"}, "source_type": "regular"} (score 1.4580)
+18. fullpath:{"action": null, "object": "shovel", "path": ["condition"], "op": "eq", "value": "clean", "source_type": "regular"} -> fullpath:{"action": "stake_and_tie_plant", "object": "tie_02", "path": ["state"], "op": "eq", "value": "uncoiled", "state_change_type": "precondition", "source_context": {"type": "action", "action_instance_id": "mem_000053.memory.actions.0.sub_actions.8", "template": "stake_and_tie_plant", "general_template": "stake_and_tie_plant", "alt": "stake_and_tie_sapling"}, "source_type": "regular"} (score 1.4580)
+19. attribute_expanded:below_ground -> attribute:soil (score 1.4400)
+20. attribute_expanded:under_soil -> attribute:soil_moisture (score 1.4400)
+20. verb_target:bury -> verb:bury (score 1.8000)
+
+
+
+

@@ -1,0 +1,56 @@
+
+  "sensory_perception_touch='source': 'oven_01'}": [
+    [
+      "mem_000015",
+    ],
+    [
+      "mem_000029",
+    ],
+    [
+      "mem_000037",
+    ]
+
+  "action:brightness_increases": [
+    [
+      "mem_000097",
+      1.0240000000000002
+    ]
+
+  "state_change:sensory_perception_sight:[{'sensation': 'amber_glow_soften_edges', 'source': 'light_source_01'}]": [
+    [
+      "mem_000097",
+      1.0
+    ]
+
+  "material:photon": [
+    [
+      "mem_000001",
+    ],
+    [
+      "mem_000010",
+    ],
+    [
+      "mem_000013",
+    ],
+    [
+      "mem_000019",
+    ],
+    [
+      "mem_000028",
+    ],
+    [
+      "mem_000030",
+
+    ],
+    [
+      "mem_000042",
+    ],
+    [
+      "mem_000053",
+    ],
+    [
+      "mem_000060",
+    ],
+
+
+

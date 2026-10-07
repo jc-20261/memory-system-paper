@@ -1,3 +1,6 @@
+Figure 4. Examples of verb generation and alias expansion
+
+
 Verb generation
 
 

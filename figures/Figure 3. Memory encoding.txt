@@ -1,4 +1,4 @@
-Figure 3. Memory encoding in JSON. This except displayed first shows the encoding of an object instance and action instance. 
+Figure 3. Memory encoding in JSON. First an excerpt shows the encoding of an object instance and an action instance. This is followed by the full encoding example. 
  
 
 

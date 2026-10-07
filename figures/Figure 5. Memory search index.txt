@@ -1,7 +1,6 @@
 Figure 5. Examples of indexed terms in the search index. 
 
 
-
   "sensory_perception_touch='source': 'oven_01'}": [
     [
       "mem_000015",
